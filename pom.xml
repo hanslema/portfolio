@@ -29,6 +29,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.12.1</version>
         <configuration>
+          <nvdProxyUrl>https://nvd.nist.gov/</nvdProxyUrl>
+          <nvdApiKey>d4445c8b-582e-4870-a0b7-e34a71dc94d5</nvdApiKey>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
