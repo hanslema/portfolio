@@ -2,9 +2,9 @@ FROM khipu/openjdk17-alpine
 
 EXPOSE 8070
 
-ENV APP_HOME /var/lib/jenkins/workspace/Hurt/target
+ENV APP_HOME /home/hans/Documents/For\Hans/portfolio
 
-COPY my-project-1.1.1.jar $APP_HOME/app.jar
+COPY target/my-project-1.1.1.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
