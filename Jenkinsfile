@@ -56,14 +56,6 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
-            steps {
-                script {
-                    withDockerRegistry(credentialsId: 'aa97c91b-923b-4925-b818-deecd81ba2bb', toolName: 'docker') { 
-                        sh "docker run -d --name linda-linda -p 8070:8070 michy22/my-project:latest"
-                    }
-                }
-            }
-        }
+        
     }
 }
